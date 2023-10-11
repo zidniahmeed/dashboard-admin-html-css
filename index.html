@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css.css" />
+    <title>Dashboard Admin</title>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="#" class="logo">
+        <i class="bx bx-store-alt"></i>
+        <div class="nama-logo"><span>Toko</span>Kita</div>
+      </a>
+      <ul class="side-menu">
+        <li class="active">
+          <a href="#"><i class="bx bxs-dashboard"></i>Dashboard</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-store-alt"></i>Toko</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-analyse"></i>analisis</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-group"></i>Pengguna</a>
+        </li>
+        <li>
+          <a href="#"><i class="bx bx-cog"></i>Pengaturan</a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="#" class="logout">
+            <i class="bx bx-log-out-circle"></i>
+            Logout
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Navbar -->
+      <header>
+        <nav>
+          <i class="bx bx-menu"></i>
+          <form action="#">
+            <div class="form-input">
+              <input type="search" placeholder="Search..." />
+              <button class="search-btn" type="submit">
+                <i class="bx bx-search"></i>
+              </button>
+            </div>
+          </form>
+          <input type="checkbox" id="theme-toggle" hidden />
+          <label for="theme-toggle" class="theme-toggle"></label>
+          <div class="profile">
+            <img src="images/logo.png" />
+            <div class="profile-content">
+              <ul>
+                <li>
+                    <a href="" class="profil-content-menu">my profile</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- End of Navbar -->
+
+      <main>
+        <div class="header">
+          <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumb">
+              <li><a href="#"> Analytics </a></li>
+              /
+              <li><a href="#" class="active">Shop</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Insights -->
+        <ul class="insights">
+          <li>
+            <i class="bx bx-line-chart"></i>
+            <span class="info">
+              <h3>1074</h3>
+              <p>order Prosess</p>
+            </span>
+          </li>
+          <li>
+            <i class='bx bx-time'></i>
+            <span class="info">
+              <h3>3944</h3>
+              <p>order Pending</p>
+            </span>
+          </li>
+          <li>
+            <i class='bx bx-check-double'></i>
+            <span class="info">
+              <h3>14721</h3>
+              <p>order success</p>
+            </span>
+          </li>
+          <li>
+            <i class='bx bx-error-circle'></i>
+            <span class="info">
+              <h3>6742</h3>
+              <p>order gagal</p>
+            </span>
+          </li>
+        </ul>
+        <!-- End of Insights -->
+
+        <div class="bottom-data">
+          <div class="orders">
+            <div class="header">
+              <i class="bx bx-receipt"></i>
+              <h3>Order Terbaru</h3>
+              <i class="bx bx-filter"></i>
+              <i class="bx bx-search"></i>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Barang</th>
+                  <th>Order Date</th>
+                  <th>Jmmlah</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="images/profile-1.jpg" />
+                    <p>Buku</p>
+                  </td>
+                  <td>1</td>
+                  <td>14-08-2023</td>
+                  <td><span class="status completed">Completed</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/profile-1.jpg" />
+                    <p>Pensil</p>
+                  </td>
+                  <td>3</td>
+                  <td>14-08-2023</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/profile-1.jpg" />
+                    <p>spidol</p>
+                  </td>
+                  <td>8</td>
+                  <td>14-08-2023</td>
+                  <td><span class="status process">Processing</span></td>
+                </tr>
+                 <tr>
+                  <td>
+                    <img src="images/profile-1.jpg" />
+                    <p>kamus</p>
+                  </td>
+                  <td>8</td>
+                  <td>14-08-2023</td>
+                  <td><span class="status failed">fail</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- stok -->
+          <div class="stok">
+            <div class="header">
+              <i class="bx bx-note"></i>
+              <h3>Stok Barang</h3>
+              <i class="bx bx-filter"></i>
+              <i class="bx bx-plus"></i>
+            </div>
+            <ul class="stok-list">
+              <li class="stok-aman">
+                <div class="stok-title">
+                  <p>Pensil</p>
+                </div>
+                4
+              </li>
+              <li class="stok-aman">
+                <div class="stok-title">
+                  <p>Buku</p>
+                </div>
+                4
+              </li>
+              <li class="stok-tidak-aman">
+                <div class="stok-title">
+                  <p>tas</p>
+                </div>
+                0
+              </li>
+            </ul>
+          </div>
+
+          <!-- End of stok-->
+        </div>
+      </main>
+      <footer>
+        <strong>Copyright © 2023 Ahmad Zidni Rosadi</strong>
+      </footer>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
